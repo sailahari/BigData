@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14484106067140" configfile="/TMiners/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="tminers" x="122" y="370" id="pf14487497979020" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14487694109473 pf14489067192440" path="tminers.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="pie.html" x="338" y="562" id="pf14487694109474" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf14487694109473" path="pie.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="mapredirect.html" id="pf14489067192451" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14489067192440" path="map_json.html"/>
+  <links id="pf14487694109473" target="pf14487694109474" source="pf14487497979020" outcome="SENTIMENT" redirect="true"/>
+  <links id="pf14489067192440" target="pf14489067192451" source="pf14487497979020" outcome="WORDCOUNT" redirect="true"/>
+</pageflow:Pageflow>
